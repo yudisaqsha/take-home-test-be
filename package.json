@@ -9,8 +9,6 @@
     "dev":"nodemon src/index.ts",
     "build": "tsc",
     "add-build": "git add dist"
-    
-   
   },
   "prisma": {
     "seed": "ts-node prisma/seeders.ts"
