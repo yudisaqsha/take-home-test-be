@@ -4,11 +4,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "prisma generate && prisma migrate deploy",
     "seed": "ts-node prisma/seeders.ts",
     "dev":"nodemon src/index.ts",
     "build": "tsc",
-    "add-build": "git add dist",
-    "postinstall": "prisma generate"
+    "add-build": "git add dist"
+    
    
   },
   "prisma": {
