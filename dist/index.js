@@ -18,5 +18,6 @@ app.get('/', (req, res) => {
     res.send('Hello world');
 });
 app.listen(PORT, () => {
-    console.log('Connected to : ', PORT);
+    console.log('Connected to PORT : ', PORT);
 });
+exports.default = app;

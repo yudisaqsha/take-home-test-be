@@ -14,4 +14,8 @@ app.get('/',(req:Request, res:Response)=>{
     res.send('Hello world')
 })
 
+app.listen(PORT, ()=>{
+    console.log('Connected to PORT : ',PORT)
+})
+
 export default app
